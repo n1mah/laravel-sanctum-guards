@@ -10,4 +10,17 @@ class Teacher extends Model
 {
     /** @use HasFactory<\Database\Factories\TeacherFactory> */
     use HasFactory,HasApiTokens;
+
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'mobile',
+        'gender',
+        'email',
+        'password',
+        'university',
+        'field_study',
+        'qualification',
+        'experience',
+    ];
 }
