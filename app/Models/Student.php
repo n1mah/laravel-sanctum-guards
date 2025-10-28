@@ -8,7 +8,6 @@ use Laravel\Sanctum\HasApiTokens;
 
 class Student extends Model
 {
-    /** @use HasFactory<\Database\Factories\StudentFactory> */
     use HasFactory,HasApiTokens;
     protected $fillable = [
         'first_name',
