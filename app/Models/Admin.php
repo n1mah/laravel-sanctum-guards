@@ -8,7 +8,6 @@ use Laravel\Sanctum\HasApiTokens;
 
 class Admin extends Model
 {
-    /** @use HasFactory<\Database\Factories\AdminFactory> */
     use HasFactory,HasApiTokens;
 
     protected $fillable = [
